@@ -8,5 +8,6 @@ import java.util.List;
 
 public interface RoleService {
     List<Role> getRoles();
+
     void setRoles(User user, String[] role);
 }

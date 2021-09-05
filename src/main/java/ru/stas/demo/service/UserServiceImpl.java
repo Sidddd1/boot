@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
 
     @Override
-    public List<User> listUsers()    {
+    public List<User> listUsers() {
         return userRepo.findAll();
     }
 
@@ -67,7 +67,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
 
-    private User findByUsername(String email){
+    private User findByUsername(String email) {
         return userRepo.findUserByEmail(email);
     }
 }
